@@ -45,3 +45,5 @@ print(type(instace_1))   # __main__ .Point    main is the module, Point is the c
 
 
 print(instace_1 == instace_2)
+
+print(issubclass(Point, object))
