@@ -4,24 +4,24 @@ class TagCloud:
 
       def __init__(self, tags=None):     # initialize my Tag Cloud with an empty dictionary
             if tags is None:
-                  self.tags = {}
+                  self.__tags = {}
             else:
-                  self.tags = tags      
+                  self.__tags = tags      
 
       def __len__(self):
-            return len(self.tags)
+            return len(self.__tags)
 
       def __iter__(self):            # it will auto work when i Loop over my TagCloud obj
-            return iter(self.tags)   # iterable object to iterate over my obj      
+            return iter(self.__tags)   # iterable object to iterate over my obj      
       
       def __reversed__(self):
-            return reversed(self.values)
+            return reversed(self.__tags)
       
       def __getitem__(self, key):
-            return self.tags[key.lower()]
+            return self.__tags[key.lower()]
 
       def __setitem__(self,key,value):
-            self.tags[key.lower()] = value    
+            self.__tags[key.lower()] = value    
 
       def add(self, tag):
 
@@ -31,7 +31,7 @@ class TagCloud:
             #       self.tags[key.lower()] = 1       
 
             """the same code as above"""
-            self.tags[tag.lower()] = self.tags.get(tag.lower(), 0) + 1  # if not exist, zero
+            self.__tags[tag.lower()] = self.__tags.get(tag.lower(), 0) + 1  # if not exist, zero
 
 
 
