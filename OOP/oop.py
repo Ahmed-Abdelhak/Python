@@ -19,6 +19,17 @@ class Point:
             return self.x
 
 
+      """this magic method to compare two instances (not the references) 
+      [overloading equality operator in JAVA]"""
+      def __eq__(self, other):             
+            return self.x  == other.x   
+
+      def __le__(self, other):
+            return self.x > other.x
+
+      def __add__(self,other):  # overloading the arithmatic operator (+)
+            return Point(self.x + other.x)      
+
 
 
 Point.static_attr = 5   # here I set the static attr which is shared over all the instances
@@ -31,3 +42,6 @@ instace_2 = Point(5)
 isinstance(instace_1 , Point)  # True or False
 
 print(type(instace_1))   # __main__ .Point    main is the module, Point is the class
+
+
+print(instace_1 == instace_2)
