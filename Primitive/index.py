@@ -21,8 +21,8 @@ print(result[0:3])  # substring
 print(result[-1])
 print(result[-1])
 print(result[-1])
-print("a7a" not in result)  # true
-print("a7a" in result)  # False
+print("aa" not in result)  # true
+print("aa" in result)  # False
 
 # ------------------------------
 print(10 // 3)  # will return integer =3
@@ -47,7 +47,7 @@ def add_two_numbers(a, b):
     if a in my_set:
         return "ss"
     elif a not in my_set:
-        return "fuck yeah"
+        return "f yeah"
     else:
         ""
 
@@ -72,7 +72,7 @@ for key,value in my_dict.items():    #.items() make a tuple, and i'm unpacking i
 # terniary operator
 
 age = 2
-message = "ata" if age == 2 else "fuck"
+message = "ata" if age == 2 else "ck"
 
 # ----------------------------------
 
@@ -86,12 +86,12 @@ while num > 5:
 # ---------------------------------
 # params in c#
 
-def myFuckzz(*params):
+def myFzz(*params):
     for num in params:
         print(num)
 
 
-myFuckzz(1, 2, 3, 4, 5)
+myFzz(1, 2, 3, 4, 5)
 # ------------------------------
 
 
